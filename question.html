@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Board</title>
+
+  <!-- Tailwind css cdn added -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- poppins font cdn from google -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<style>
+  body{
+    font-family: "Poppins", sans-serif;
+  }
+</style>
+</head>
+
+<body class=" max-w-screen-2xl bg-blue-50 px-20 pt-8">
+
+  <header>
+    <!-- Navbar section -->
+  <section  class="bg-white p-6 rounded-lg flex justify-between">
+    
+  <div class="flex items-center">
+    <img src="assets/logo.png" alt="#">
+    <h1 class="text-3xl ml-3 text-[#00303C] ">Dev<span class="font-bold">Board</span></h1>
+  </div>
+    
+ <button class="bg-indigo-600 hover:bg-indigo-800 text-white font-medium py-2 px-4 rounded-lg">Back to Desk</button>
+  </section> 
+  </header>
+
+  <main>
+    <h1 class=" font-semibold text-center text-4xl my-10 " >Blogs</h1>
+
+    <!-- Question 1 -->
+
+    <section class="bg-white rounded-lg shadow p-5 my-5">
+      <h2 class="font-medium text-lg">Question-1: What are the different ways to select an element in the DOM?</h2>
+
+      <hr class="border-dashed my-5 text-[#3752FD33]">
+
+      <p class="mb-4 text-lg"><span class="font-medium mr-3">Answer:   </span> Webpage-er kono ekta jinis ke <span class="italic font-semibold">JavaScript</span> diye dhorte (select korte) onek gula upay ache. Nicher gulo sob theke beshi use hoy— </p>
+       
+        <ol class="list-decimal list-inside space-y-2 text-gray-800 text-lg">
+          <li><span class="font-semibold">ID use kore:</span>  Kono ekta element er unique ID thakle seta diye easily select kora jay.</li>
+          <li><span class="font-semibold">Class use kore:</span> Jodi onek gulo element er same class thake, tahole shobgulo ke eksathe select kora jay.</li>
+          <li><span class="font-semibold">Tag name use kore:</span> Ekoi dhoroner tag (h1, p, div etc.) sob ekbare select kora jay.</li>
+          <li><span class="font-semibold">Query Selector use kore:</span> CSS er moto likhle ID, class, tag sob kichu ekta method diye select kora jay.</li>
+          <li><span class="font-semibold">Name use kore:</span> Mainly form-er element gula select korar jonno use hoy.</li>
+          
+        </ol>
+    </section> 
+
+
+        <!-- Question 2 -->
+
+        <section class="bg-white rounded-lg shadow p-5 my-8">
+          <h2 class="font-medium text-lg">Question-2: What is the difference between <span class="font-semibold">innerHTML, innerText, and textContent</span> ?</h2>
+    
+          <hr class="border-dashed my-5 text-[#3752FD33]">
+    
+          <p class="mb-4 text-lg"><span class="font-medium mr-3">Answer:</span>The difference between innerHTML, innerText, and textContent are— </p>
+           
+          <table class="min-w-full table-auto border-collapse">
+            <thead>
+              <tr class="bg-blue-100 text-left">
+                <th class="px-4 py-2 border border-gray-300">Feature</th>
+                <th class="px-4 py-2 border border-gray-300">innerHTML</th>
+                <th class="px-4 py-2 border border-gray-300">innerText</th>
+                <th class="px-4 py-2 border border-gray-300">textContent</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-gray-50">
+                <td class="px-4 py-2 border border-gray-300 font-semibold">HTML Tag</td>
+                <td class="px-4 py-2 border border-gray-300">Yes, includes HTML tags</td>
+                <td class="px-4 py-2 border border-gray-300">No, just visible text</td>
+                <td class="px-4 py-2 border border-gray-300">No, just text</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-4 py-2 border border-gray-300 font-semibold">CSS Influence</td>
+                <td class="px-4 py-2 border border-gray-300">No, unaffected by CSS</td>
+                <td class="px-4 py-2 border border-gray-300">Yes, affected by CSS </td>
+                <td class="px-4 py-2 border border-gray-300">No, unaffected by CSS</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="px-4 py-2 border border-gray-300 font-semibold">Performance</td>
+                <td class="px-4 py-2 border border-gray-300">Slower (parses HTML)</td>
+                <td class="px-4 py-2 border border-gray-300">Faster than "innerHTML"</td>
+                <td class="px-4 py-2 border border-gray-300">Fastest (works with raw text)</td>
+              </tr>
+            </tbody>
+          </table>
+        </section> 
+
+
+  <!-- Question 3 -->
+
+  <section class="bg-white rounded-lg shadow p-5 my-5">
+    <h2 class="font-medium text-lg">Question-3:  What is <strong>event delegation</strong> in the <span class="italic">DOM</span>?</h2>
+
+    <hr class="border-dashed my-5 text-[#3752FD33]">
+
+    <p class="mb-4 text-lg"><span class="font-medium mr-3">Answer:</span> <span class="font-medium">Event delegation</span> ekta technique ja use kore amra <span class="italic">parent element</span> er upor ekta <strong>event listener</strong> diye, <span class="italic font-medium">child elements</span> gular events handle korte pari. </p>
+    <br>
+     
+      <h3 class="font-semibold text-xl my-2">Kibhabe kaj kore?</h3>
+      <ul class="list-disc pl-6 text-lg">
+        <li>
+          Jakhon kono event hoy (<span class="italic">like click</span>), seta <span class="italic font-medium">bubbles</span> hoye <span class="font-semibold">parent element</span> er dike jete thake.
+        </li>
+        <li>
+          Parent element er event listener check kore je kon child element e event hocche, then sei element er event handle kore.
+        </li>
+      </ul>
+  </section> 
+
+
+  <!-- Question 4 -->
+
+  <section class="bg-white rounded-lg shadow p-5 my-5">
+    <h2 class="font-medium text-lg">Question-4:  What is <span class="font-semibold">event bubbling</span> in the <span class="italic">DOM</span>?</h2>
+
+    <hr class="border-dashed my-5 text-[#3752FD33]">
+
+    <p class="mb-4 text-lg"><span class="font-medium mr-3">Answer:</span> <span class="font-medium">Event bubbling</span> holo ekta process jekhane, kono <span class="font-medium">event</span> (<span class="italic">like click</span>) apply kora hole, tokhon sei event ta <span class="font-medium">parent elements</span> gulor dike uthte thake. And shesh porjonto <span class="font-medium">root element</span> e giye theme jay. Tobe amra caile ageo thamate pari <strong>"event.stopPropagation()"</strong> method use kore. </p>
+    <br>
+     
+      <h3 class="font-semibold text-xl my-2">Kibhabe kaj kore?</h3>
+      <ul class="list-disc pl-6 text-lg">
+        <li>
+          Jokhon ekta <span class="font-medium">child element</span> e event trigger hoy, seta prothome child element ei handle hoy.
+        </li>
+        <li>
+          Tarpor event ta bubble hoye tar <span class="font-medium">parent element</span> e chole jay, abar tar parent e, eirokom kore <span class="font-medium">root element</span> porjonto uthe.
+        </li>
+        <li>
+          Jodi parent elements gulo <span class="font-medium italic">event listener</span> set kore rakhe, tahole tarao sei event receive korte pare.
+        </li>
+      </ul>
+  </section> 
+
+
+  <!-- Question 5 -->
+
+  <section class="bg-white rounded-lg shadow p-5 my-5 mb-14">
+    <h2 class="font-medium text-lg">Question-5:  How do you <strong>create, add,</strong> and <strong>remove</strong> elements using JavaScript?</h2>
+
+    <hr class="border-dashed my-5 text-[#3752FD33]">
+
+    <p class="mb-4 text-lg"><span class="font-medium mr-3">Answer: <span class="font-medium">JavaScript</span> use kore amra dynamically elements create, add and remove korte pari.</p>
+    <br>
+     
+      <h3 class="font-semibold text-xl my-2">Kibhabe kaj kore?</h3>
+      <ol class="list-decimal list-inside space-y-2 text-gray-800 text-lg">
+        <li><span class="font-semibold">Element Create:</span>  <strong class="italic">"document.createElement()"</strong> use kore notun ekta element create kora jay.</li>
+        <li><span class="font-semibold">Element Add:</span> <strong class="italic">"appendChild()", "append()", "prepend()", "insertBefore()"</strong> use kore element ke kono parent er moddhe add kora jay.</li>
+        <li><span class="font-semibold">Element Remove:</span> <strong class="italic">"removeChild()"</strong> or <span class="font-semibold italic">"remove()"</span> use kore kono element ke DOM theke remove kora jay.</li>
+        
+        
+      </ol>
+  </section>
+
+  </main>
+  
+</body>
+</html>

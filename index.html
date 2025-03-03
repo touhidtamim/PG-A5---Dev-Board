@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Board</title>
+
+  <!-- Tailwind css cdn added -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- poppins font cdn from google -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<style>
+  body{
+    font-family: "Poppins", sans-serif;
+  }
+</style>
+
+</head>
+
+<body class=" max-w-screen-2xl bg-blue-50 px-20 pt-8">
+
+
+
+<header>
+  <!-- Navbar section -->
+<section  class="bg-white p-6 rounded-lg flex justify-between">
+  
+<div class="flex items-center">
+  <img src="assets/logo.png" alt="#">
+  <h1 class="text-3xl ml-3 text-[#00303C] ">Dev<span class="font-bold">Board</span></h1>
+</div>
+  
+<div class="flex">
+  <div class="flex items-center gap-5 bg-blue-50 px-5 py-2 rounded-full">
+    <img src="assets/checkbox.png" alt="#">
+    <p class="text-2xl font-bold">24</p>
+  </div>
+  <div class="flex items-center ml-10 bg-blue-50 p-3  rounded-full hover:bg-teal-200">
+    <button>
+      <img class="cursor-pointer  rounded-full" src="assets/theme-btn.png" alt="#">
+    </button>
+  </div>
+</div> 
+</section> 
+</header>
+
+<main class=" flex gap-5 ">
+  <!--left part -->
+  <section class="bg-white rounded-lg mt-6 w-4/5 mb-10">
+      <!-- task assigned part -->
+      <div class="grid grid-cols-7 ml-6 my-8 gap-4">
+        <div class="flex items-center gap-3 col-span-2 bg-blue-50 rounded-lg px-8 py-9">
+          <div>
+            <img class="bg-white p-3 rounded-full" src="assets/checkbox.png" alt="#">
+          </div>
+          <div>
+            <p class="font-normal text-[#00303C] opacity-80">Task Assigned </p>
+            <h3 class="font-semibold">06</h3>
+          </div>
+        </div>
+    
+        <div class="flex items-center gap-7 col-span-3 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-lg hover:bg-blue-800 cursor-pointer">
+          <div class="ml-7">
+            <img src="assets/board.png" alt="#">
+          </div>
+          <div>
+            <h3 class="text-white font-normal text-base">Discover Something <br> New Today!</h3>
+          </div>
+        </div>
+    
+        <div class="flex items-center gap-3 col-span-2 bg-blue-50 rounded-lg px-4 py-5 mr-4">
+          <div>
+            <img class="bg-white p-3 rounded-full" src="assets/calender.png" alt="#">
+          </div>
+          <div>
+            <p class="text-base">Wed ,</p>
+            <h3 class="font-bold text-lg">Jul 28 2025</h3>
+          </div>
+        </div>
+    
+      </div>
+      <hr class="border-dashed mb-8 text-[#3752FD33]  ">
+    
+      <!-- cards -->
+      <div class="grid grid-cols-3 gap-4 mx-5 my-5">
+
+        <!-- card 1 -->
+        <div class="bg-blue-50 p-6 rounded-lg">
+          <h2 class="text-base font-normal bg-white px-3 py-4 rounded-md w-2/4 mb-3">Shop Ease</h2>
+          <p class="font-semibold text-lg py-2" >Fix Mobile Button Issue</p>
+          <p class=" bg-white px-2 py-3 rounded-lg font-light text-gray-500 ">Resolve mobile button issues for a smoother shopping experience, ensuring seamless navigation</p>
+          <hr class="border-dashed my-3 text-[#3752FD33] w-full ">
+          <div class="flex justify-between items-center">
+              <p> <span class="opacity-70">Deadline</span> <br><span class="font-medium text-base">21 March 2025</span></p>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Complete</button>
+          </div>
+      </div>
+
+      <!-- card 2 -->
+      <div class="bg-blue-50 p-6 rounded-lg">
+        <h2 class="text-base font-normal bg-white px-3 py-4 rounded-md w-2/4 mb-3">CloudSync</h2>
+        <p class="font-semibold text-lg py-2" >Add Dark Mode</p>
+        <p class=" bg-white px-2 py-3 rounded-lg font-light text-gray-500 ">Implement dark mode to enhance user experience, providing a visually...</p>
+        <hr class="border-dashed my-3 text-[#3752FD33] w-full ">
+        <div class="flex justify-between items-center">
+            <p> <span class="opacity-70">Deadline</span> <br><span class="font-medium text-base">23 March 2025</span></p>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Complete</button>
+        </div>
+    </div>
+
+
+
+    <!-- card 3 -->
+    <div class="bg-blue-50 p-6 rounded-lg">
+      <h2 class="text-base font-normal bg-white px-3 py-4 rounded-md w-2/4 mb-3">SwiftPay</h2>
+      <p class="font-semibold text-lg py-2" >Optimize  Home page </p>
+      <p class=" bg-white px-2 py-3 rounded-lg font-light text-gray-500 ">Enhance payment processing, improve transaction security, and ensure real-time updates</p>
+      <hr class="border-dashed my-3 text-[#3752FD33] w-full ">
+      <div class="flex justify-between items-center">
+          <p> <span class="opacity-70">Deadline</span> <br><span class="font-medium text-base">24 March 2025</span></p>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Complete</button>
+      </div>
+  </div>
+
+
+  <!-- card 4 -->
+  <div class="bg-blue-50 p-6 rounded-lg">
+    <h2 class="text-base font-normal bg-white px-3 py-4 rounded-md w-2/4 mb-3">Meta</h2>
+    <p class="font-semibold text-lg py-2" >Add new reaction</p>
+    <p class=" bg-white px-2 py-3 rounded-lg font-light text-gray-500 ">Introduce new reaction options to enhance user interaction, offering a more expressive...</p>
+    <hr class="border-dashed my-3 text-[#3752FD33] w-full ">
+    <div class="flex justify-between items-center">
+        <p> <span class="opacity-70">Deadline</span> <br><span class="font-medium text-base">26 March 2025</span></p>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Complete</button>
+    </div>
+</div>
+
+
+<!-- card 5 -->
+<div class="bg-blue-50 p-6 rounded-lg">
+  <h2 class="text-base font-normal bg-white px-3 py-4 rounded-md w-2/4 mb-3">Google LLC</h2>
+  <p class="font-semibold text-lg py-2" >Integrate OpenAI API</p>
+  <p class=" bg-white px-2 py-3 rounded-lg font-light text-gray-500 ">Integrate OpenAI API seamlessly, optimize request handling, and ensure real-time data fetching</p>
+  <hr class="border-dashed my-3 text-[#3752FD33] w-full ">
+  <div class="flex justify-between items-center">
+      <p> <span class="opacity-70">Deadline</span> <br><span class="font-medium text-base">28 March 2025</span></p>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Complete</button>
+  </div>
+</div>
+
+
+<!-- card 6 -->
+<div class="bg-blue-50 p-6 rounded-lg">
+  <h2 class="text-base font-normal bg-white px-3 py-4 rounded-md w-2/4 mb-3">Glassdoar</h2>
+  <p class="font-semibold text-lg py-2" >Improve Job searching </p>
+  <p class=" bg-white px-2 py-3 rounded-lg font-light text-gray-500 ">Enhance the job searching experience with advanced filters and personalized...</p>
+  <hr class="border-dashed my-3 text-[#3752FD33] w-full ">
+  <div class="flex justify-between items-center">
+      <p> <span class="opacity-70">Deadline</span> <br><span class="font-medium text-base">31 March 2025</span></p>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Complete</button>
+  </div>
+</div>
+
+
+
+    
+      </div>
+    
+  </section>
+
+
+  <!-- right part -->
+  <section class="bg-white rounded-lg mt-6  pt-5 mb-10">
+  <div class="px-14">
+    <div class="flex flex-col items-center gap-5" >
+      <div class="flex items-center gap-3">
+        <div>
+          <img class="mr-1" src="assets/activity.png" alt="#">
+        </div>
+        <div>
+          <p>Activity Log</p>
+        </div>
+    </div>
+    <div>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Clear History</button>
+    </div>
+    </div>
+  </div>
+
+  <hr class="border-dashed my-8 text-[#3752FD33] w-full ">
+
+  <p class="p-4 opacity-70 font-normal bg-blue-50 rounded-lg m-4 w-60 py-6" >You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+
+  <p class="p-4 opacity-70 font-normal bg-blue-50 rounded-lg m-4 w-60" >You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+  
+  </section>
+</main>
+
+
+
+
+<script src="devboard_scripts/script.js"></script>
+</body>
+</html>
