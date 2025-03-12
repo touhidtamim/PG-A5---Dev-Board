@@ -35,12 +35,12 @@
 </div>
   
 <div class="flex">
-  <div class="flex items-center gap-5 bg-blue-50 px-5 py-2 rounded-full">
+  <div class="flex items-center gap-5 bg-blue-50 px-5 py-1 rounded-full">
     <img src="assets/checkbox.png" alt="#">
-    <p class="text-2xl font-bold">24</p>
+    <p class="navbarCount text-2xl font-bold">24</p>
   </div>
-  <div class="flex items-center ml-10 bg-blue-50 p-3  rounded-full hover:bg-teal-200">
-    <button>
+  <div class="flex items-center ml-10 bg-blue-50 p-2  rounded-full ">
+    <button onclick="changeBg()" class="hover:scale-125 transition-transform duration-150">
       <img class="cursor-pointer  rounded-full" src="assets/theme-btn.png" alt="#">
     </button>
   </div>
@@ -58,8 +58,8 @@
             <img class="bg-white p-3 rounded-full" src="assets/checkbox.png" alt="#">
           </div>
           <div>
-            <p class="font-normal text-[#00303C] opacity-80">Task Assigned </p>
-            <h3 class="font-semibold">06</h3>
+            <p  class="font-normal text-[#00303C] opacity-80">Task Assigned </p>
+            <h3 id="taskAssigned" class="font-semibold">06</h3>
           </div>
         </div>
     
@@ -96,7 +96,7 @@
           <hr class="border-dashed my-3 text-[#3752FD33] w-full ">
           <div class="flex justify-between items-center">
               <p> <span class="opacity-70">Deadline</span> <br><span class="font-medium text-base">21 March 2025</span></p>
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Complete</button>
+              <button class=" completeButton bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Complete</button>
           </div>
       </div>
 
@@ -108,7 +108,7 @@
         <hr class="border-dashed my-3 text-[#3752FD33] w-full ">
         <div class="flex justify-between items-center">
             <p> <span class="opacity-70">Deadline</span> <br><span class="font-medium text-base">23 March 2025</span></p>
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Complete</button>
+            <button class=" completeButton bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Complete</button>
         </div>
     </div>
 
@@ -122,7 +122,7 @@
       <hr class="border-dashed my-3 text-[#3752FD33] w-full ">
       <div class="flex justify-between items-center">
           <p> <span class="opacity-70">Deadline</span> <br><span class="font-medium text-base">24 March 2025</span></p>
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Complete</button>
+          <button class=" completeButton bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Complete</button>
       </div>
   </div>
 
@@ -135,7 +135,7 @@
     <hr class="border-dashed my-3 text-[#3752FD33] w-full ">
     <div class="flex justify-between items-center">
         <p> <span class="opacity-70">Deadline</span> <br><span class="font-medium text-base">26 March 2025</span></p>
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Complete</button>
+        <button class=" completeButton bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Complete</button>
     </div>
 </div>
 
@@ -148,7 +148,7 @@
   <hr class="border-dashed my-3 text-[#3752FD33] w-full ">
   <div class="flex justify-between items-center">
       <p> <span class="opacity-70">Deadline</span> <br><span class="font-medium text-base">28 March 2025</span></p>
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Complete</button>
+      <button class=" completeButton bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Complete</button>
   </div>
 </div>
 
@@ -161,7 +161,7 @@
   <hr class="border-dashed my-3 text-[#3752FD33] w-full ">
   <div class="flex justify-between items-center">
       <p> <span class="opacity-70">Deadline</span> <br><span class="font-medium text-base">31 March 2025</span></p>
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Complete</button>
+      <button class=" completeButton bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Complete</button>
   </div>
 </div>
 
@@ -193,7 +193,7 @@
 
   <hr class="border-dashed my-8 text-[#3752FD33] w-full ">
 
-  <p class="p-4 opacity-70 font-normal bg-blue-50 rounded-lg m-4 w-60 py-6" >You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+  <p id="activityLog" class="p-4 opacity-70 font-normal bg-blue-50 rounded-lg m-4 w-60 py-6" >You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
 
   <p class="p-4 opacity-70 font-normal bg-blue-50 rounded-lg m-4 w-60" >You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
   
