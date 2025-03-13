@@ -40,7 +40,6 @@ function randomColor() {
 
 
 // cards button functionality
-
 const completeButtons = document.querySelectorAll('.completeButton');
 const taskAssigned = document.querySelector('#taskAssigned');
 const navbarCount = document.querySelector('.navbarCount');
@@ -62,7 +61,6 @@ completeButtons.forEach(button => {
 
 
   // Activity Log functionality
-
 const taskTitle = button.closest('.bg-blue-50').querySelector('.taskTitle').textContent;
 const currentTime = new Date().toLocaleTimeString();
 const activityMessage = `You have completed the task <strong>${taskTitle}</strong> at ${currentTime}`;
@@ -91,14 +89,12 @@ function updateButtonState(button) {
 // Clear History Button Functionality
 const historyClean = document.getElementById('historyClean');
 
-historyClean.addEventListener('click', function () {
+  historyClean.addEventListener('click', function () {
 
   const activityMessages = activityLog.querySelectorAll('p');
 
   activityMessages.forEach(message => {
     message.remove();
   });
-
-
 });
 
