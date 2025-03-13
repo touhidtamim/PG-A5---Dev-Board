@@ -1,3 +1,4 @@
+
 // question page to previous page 
 
 function back2Desk() {
@@ -58,12 +59,23 @@ completeButtons.forEach(button => {
     navbarCount.textContent = currentNavbarCount + 1;
 
     updateButtonState(button);
+
+
+  // Activity Log functionality
+
+const taskTitle = button.closest('.bg-blue-50').querySelector('.taskTitle').textContent;
+const currentTime = new Date().toLocaleTimeString();
+const activityMessage = `You have completed the task <strong>${taskTitle}</strong> at ${currentTime}`;
+
+  const newActivity = document.createElement('p');
+  newActivity.innerHTML = activityMessage;
+  newActivity.classList.add('p-4', 'opacity-70', 'font-normal', 'bg-blue-50', 'rounded-lg', 'm-4', 'w-60');
+  activityLog.appendChild(newActivity);
+
+
     if (parseInt(taskAssigned.textContent) === 0) {
-      alert("You have completed all the tasks");
+      alert("Congratulations! You have completed all the tasks");
     }
-
-
-
   });
 });
 
@@ -75,3 +87,18 @@ function updateButtonState(button) {
   button.style.opacity = "0.5";
   button.classList.add('cursor-not-allowed');
 }
+
+// Clear History Button Functionality
+const historyClean = document.getElementById('historyClean');
+
+historyClean.addEventListener('click', function () {
+
+  const activityMessages = activityLog.querySelectorAll('p');
+
+  activityMessages.forEach(message => {
+    message.remove();
+  });
+
+
+});
+

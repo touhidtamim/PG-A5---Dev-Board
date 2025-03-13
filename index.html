@@ -37,7 +37,7 @@
 <div class="flex">
   <div class="flex items-center gap-5 bg-blue-50 px-5 py-1 rounded-full">
     <img src="assets/checkbox.png" alt="#">
-    <p class="navbarCount text-2xl font-bold">24</p>
+    <p class="navbarCount text-2xl font-bold">23</p>
   </div>
   <div class="flex items-center ml-10 bg-blue-50 p-2  rounded-full ">
     <button onclick="changeBg()" class="hover:scale-125 transition-transform duration-150">
@@ -91,7 +91,7 @@
         <!-- card 1 -->
         <div class="bg-blue-50 p-6 rounded-lg">
           <h2 class="text-base font-normal bg-white px-3 py-4 rounded-md w-2/4 mb-3">Shop Ease</h2>
-          <p class="font-semibold text-lg py-2" >Fix Mobile Button Issue</p>
+          <p class=" taskTitle font-semibold text-lg py-2" >Fix Mobile Button Issue</p>
           <p class=" bg-white px-2 py-3 rounded-lg font-light text-gray-500 ">Resolve mobile button issues for a smoother shopping experience, ensuring seamless navigation</p>
           <hr class="border-dashed my-3 text-[#3752FD33] w-full ">
           <div class="flex justify-between items-center">
@@ -103,7 +103,7 @@
       <!-- card 2 -->
       <div class="bg-blue-50 p-6 rounded-lg">
         <h2 class="text-base font-normal bg-white px-3 py-4 rounded-md w-2/4 mb-3">CloudSync</h2>
-        <p class="font-semibold text-lg py-2" >Add Dark Mode</p>
+        <p class=" taskTitle font-semibold text-lg py-2" >Add Dark Mode</p>
         <p class=" bg-white px-2 py-3 rounded-lg font-light text-gray-500 ">Implement dark mode to enhance user experience, providing a visually...</p>
         <hr class="border-dashed my-3 text-[#3752FD33] w-full ">
         <div class="flex justify-between items-center">
@@ -117,7 +117,7 @@
     <!-- card 3 -->
     <div class="bg-blue-50 p-6 rounded-lg">
       <h2 class="text-base font-normal bg-white px-3 py-4 rounded-md w-2/4 mb-3">SwiftPay</h2>
-      <p class="font-semibold text-lg py-2" >Optimize  Home page </p>
+      <p class=" taskTitle font-semibold text-lg py-2" >Optimize  Home page </p>
       <p class=" bg-white px-2 py-3 rounded-lg font-light text-gray-500 ">Enhance payment processing, improve transaction security, and ensure real-time updates</p>
       <hr class="border-dashed my-3 text-[#3752FD33] w-full ">
       <div class="flex justify-between items-center">
@@ -130,7 +130,7 @@
   <!-- card 4 -->
   <div class="bg-blue-50 p-6 rounded-lg">
     <h2 class="text-base font-normal bg-white px-3 py-4 rounded-md w-2/4 mb-3">Meta</h2>
-    <p class="font-semibold text-lg py-2" >Add new reaction</p>
+    <p class=" taskTitle font-semibold text-lg py-2" >Add new reaction</p>
     <p class=" bg-white px-2 py-3 rounded-lg font-light text-gray-500 ">Introduce new reaction options to enhance user interaction, offering a more expressive...</p>
     <hr class="border-dashed my-3 text-[#3752FD33] w-full ">
     <div class="flex justify-between items-center">
@@ -143,7 +143,7 @@
 <!-- card 5 -->
 <div class="bg-blue-50 p-6 rounded-lg">
   <h2 class="text-base font-normal bg-white px-3 py-4 rounded-md w-2/4 mb-3">Google LLC</h2>
-  <p class="font-semibold text-lg py-2" >Integrate OpenAI API</p>
+  <p class=" taskTitle font-semibold text-lg py-2" >Integrate OpenAI API</p>
   <p class=" bg-white px-2 py-3 rounded-lg font-light text-gray-500 ">Integrate OpenAI API seamlessly, optimize request handling, and ensure real-time data fetching</p>
   <hr class="border-dashed my-3 text-[#3752FD33] w-full ">
   <div class="flex justify-between items-center">
@@ -156,7 +156,7 @@
 <!-- card 6 -->
 <div class="bg-blue-50 p-6 rounded-lg">
   <h2 class="text-base font-normal bg-white px-3 py-4 rounded-md w-2/4 mb-3">Glassdoar</h2>
-  <p class="font-semibold text-lg py-2" >Improve Job searching </p>
+  <p class="taskTitle font-semibold text-lg py-2" >Improve Job searching </p>
   <p class=" bg-white px-2 py-3 rounded-lg font-light text-gray-500 ">Enhance the job searching experience with advanced filters and personalized...</p>
   <hr class="border-dashed my-3 text-[#3752FD33] w-full ">
   <div class="flex justify-between items-center">
@@ -186,16 +186,18 @@
         </div>
     </div>
     <div>
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Clear History</button>
+      <button id="historyClean" class="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg">Clear History</button>
     </div>
     </div>
   </div>
 
   <hr class="border-dashed my-8 text-[#3752FD33] w-full ">
 
-  <p id="activityLog" class="p-4 opacity-70 font-normal bg-blue-50 rounded-lg m-4 w-60 py-6" >You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+<div id="activityLog">
+  <p class=" hidden p-4 opacity-70 font-normal bg-blue-50 rounded-lg m-4 w-60 py-6" >You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
 
-  <p class="p-4 opacity-70 font-normal bg-blue-50 rounded-lg m-4 w-60" >You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+  <p class=" hidden p-4 opacity-70 font-normal bg-blue-50 rounded-lg m-4 w-60" >You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+</div>
   
   </section>
 </main>
